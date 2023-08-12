@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">win32com</span><span class="s2">.</span><span class="s1">client </span><span class="s0">as </span><span class="s1">wincom</span>
+<span class="s1">speak </span><span class="s2">= </span><span class="s1">wincom</span><span class="s2">.</span><span class="s1">Dispatch</span><span class="s2">(</span><span class="s3">&quot;SAPI.SpVoice&quot;</span><span class="s2">)</span>
+
+
+<span class="s0">if </span><span class="s1">__name__ </span><span class="s2">== </span><span class="s3">'__main__' </span><span class="s2">:</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Welcome to Robospeaker 1.1. Created by Sabyasachi , to close the program press 'q' &quot;</span><span class="s2">)</span>
+    <span class="s0">while True</span><span class="s2">:</span>
+        <span class="s1">x </span><span class="s2">= </span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter what you want me to Speak : &quot;</span><span class="s2">)</span>
+        <span class="s0">if </span><span class="s1">x </span><span class="s2">== </span><span class="s3">'q'</span><span class="s2">:</span>
+            <span class="s1">speak</span><span class="s2">.</span><span class="s1">Speak</span><span class="s2">(</span><span class="s3">&quot;Exiting from the program&quot;</span><span class="s2">)</span>
+            <span class="s0">break</span>
+
+        <span class="s1">speak</span><span class="s2">.</span><span class="s1">Speak</span><span class="s2">(</span><span class="s1">x</span><span class="s2">)</span></pre>
+</body>
+</html>
